@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Jonitown Pro Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Jonitown</span>
+                </div>
+                <i class="bx bx-menu" id="btn"></i>
+            <div class="user"> 
+                <img src="NiceFrogKLEINER.png" class="profile-pic" alt="">
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">
+                <i class="bx bxs-grid"></i>
+                <span class="nav-item">Menu</span>
+            </a>
+            <span class="tooltip">Menu</span>
+            <li><a href="#">
+                <i class='bx bx-expand-vertical'></i>
+                <span class="nav-item">bla</span>
+            </a>
+            <span class="tooltip">bla</span> <li><a href="#">
+                <i class='bx bxs-slideshow' ></i>
+                <span class="nav-item">cha</span>
+            </a>
+            <span class="tooltip">cha</span> <li><a href="#">
+                <i class='bx bx-shape-triangle' ></i>
+                <span class="nav-item">border</span>
+            </a>
+            <span class="tooltip">border</span> <li><a href="#">
+                <i class='bx bxs-comment-dots' ></i>
+                <span class="nav-item">lol</span>
+            </a>
+            <span class="tooltip">lol</span>
+        </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Jonitown</h1>
+        </div>
+    </div>
+
+        
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
+</html> 
