@@ -16,7 +16,7 @@
     <div class="sidebar">
         <div class="top">
             <div class="logo">
-                <i class='bx bx-world' ></i>
+            
                 <span>Jonitown</span>
                 </div>
                 <i class="bx bx-menu" id="btn"></i>
@@ -47,24 +47,49 @@
                 <span class="nav-item">lol</span>
             </a>
             <span class="tooltip">lol</span>
+            <a href="#" id="btn2">
+                <i class='bx bx-sun' id="sun"></i>
+                <i class='bx bx-moon' id="moon"></i>
+                <span class="nav-item">Mode</span>
+            </a>
         </li>
         </ul>
     </div>
-    <div class="main-content">
+    <div class="maincontent">
         <div class="container">
-            <h1>Home Page</h1>
+            <h1 class="homep">Home Page</h1>
 
         </div>
     </div>
 
         
 </body>
-<script>
-    let btn = document.querySelector('#btn')
-    let sidebar = document.querySelector('.sidebar')
+        <script>
+            let btn = document.querySelector('#btn')
+            let sidebar = document.querySelector('.sidebar')
 
-    btn.onclick = function(){
-        sidebar.classList.toggle('active');
+            btn.onclick = function(){
+                sidebar.classList.toggle('active')
     };
-</script>
+        </script>
+        <script>
+        let btn2 = document.querySelector('#btn2')
+        let maincontent = document.querySelector('.maincontent')
+
+        btn2.onclick = function(){
+            maincontent.classList.toggle('light')
+            sun.classList.toggle('dark')
+            moon.classList.toggle('dark')
+           
+           
+           
+            
+
+};
+    </script>
+
+
+
+
+
 </html> 
